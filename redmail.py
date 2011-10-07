@@ -3,8 +3,10 @@ user = "" #reddit username
 password = "" #reddit password
 delay = 60*5 #delay in seconds between checking mail
 
+
+#dont you dare look down past here!!!
+
 import time
-import sys
 import pywinusb.hid as hid
 import reddit
 
