@@ -20,11 +20,11 @@ def get_device():
 	
 	
 def set_color(device,color):
-		for report in device.find_output_reports():
-			if 4278190081 in report:
-				report[4278190081] =  [color,0,0,0,0] 
-				report.send() 				
-	
+	for report in device.find_output_reports():
+		if 4278190081 in report:
+			report[4278190081] =  [color,0,0,0,0] 
+			report.send() 				
+
 				
 if __name__ == '__main__':	
 	try:
