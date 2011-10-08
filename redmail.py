@@ -12,7 +12,7 @@ import reddit
 
 def get_device():
 	all_devices = hid.HidDeviceFilter(vendor_id = 0x1294).get_devices()
-		if len(all_devices)==0:
+	if len(all_devices)==0:
 		print "Can't find target device"		
 	else:		
 		return all_devices[0]
